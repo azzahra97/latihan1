@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pawon Tembi</title>
+	<link rel="stylesheet" type="text/css" href="uts.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="icon" type="images/x-icon" href="/uts/Imagesu/logo.jpg">
+
+</head>
+<body>
+
+<header>
+	
+	<input type="checkbox" name="" id="toggler">
+	<label for="toggler" class="fas fa-bars"></label>
+
+	<a href="#" class="logo">Pawon Tembi<span></span></a>
+
+	<nav class="navbar">
+		<a href="#Home">Home</a>
+		<a href="#About">About Us</a>
+		<a href="#Galeri">Gallery</a>
+		<a href="#Produk">Product</a>
+		<a href="#Kontak">Contact</a>
+	</nav>
+
+	<div class="icons">
+		<a href="#About" class="fas fa-heart"></a>
+		<a href="#Produk" class="fas fa-shopping-cart"></a>
+		<a href="#Kontak" class="fas fa-user"></a>
+	</div>
+
+</header>
+
+<!-- home section starts -->
+
+<section class="Home" id="Home">
+	<div class="content">
+		<h3>Pawon Tembi</h3>
+		<span>Harmoni Cita Rasa Jawa Tengah</span>
+		<p>Kami menyediakan bumbu-bumbu rempah khas Jawa Tengah yang diracik dengan resep tradisional. Ciptakan cita rasa autentik dengan mudah bersama Pawon Tembi!</p>
+		<a href="#Produk" class="btn">shop now</a>
+	</div>
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts -->
+
+<section class="About" id="About">
+	
+	<h1 class="heading"><span> About </span> Us </h1>
+
+	<div class="row">
+
+		<div class="video-container">
+			<video src="/uts/imagesu/vivi.mp4" autoplay muted></video>
+			<h3>Top Spice Merchant</h3>
+		</div>
+
+		<div class="content">
+			<h3>Why Choose Us?</h3><br>
+			<p>Pawon Tembi menawarkan rempah-rempah terbaik yang dipilih dengan cermat untuk memastikan kualitas dan keaslian rasa masakan Anda. Kami percaya bahwa setiap butir rempah adalah kunci untuk menciptakan hidangan yang istimewa dan autentik.</p>
+			<p>Selain itu, kami menyediakan berbagai resep tradisional masakan dan minuman khas Jawa Tengah yang mudah diikuti. Dengan Pawon Tembi, Anda dapat menghadirkan cita rasa Nusantara ke meja makan Anda dengan cara yang sederhana namun penuh kehangatan budaya.</p>
+			<a href="#Home" class="btn">learn more</a>
+		</div>
+
+	</div>
+
+
+
+</section>
+
+<!-- about section ends -->
+
+<section class="icons-container">
+    <div class="icons" onclick="showPopup('Free Delivery On All Orders')">
+        <img src="/uts/imagesu/icon1.jpg" alt="Free Delivery">
+    </div>
+
+    <div class="icons" onclick="showPopup('Secure Payment On All Orders')">
+        <img src="/uts/imagesu/icon2.png" alt="Secure Payment">
+    </div>
+  
+    <div class="icons" onclick="showPopup('BPOM Verified On All Products')">
+        <img src="/uts/imagesu/icon3.jpg" alt="BPOM Verified">
+    </div>
+
+<div class="popup" id="popup" style="display: none;">
+    <p id="popup-text"></p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+</section>
+
+<hr style="height : 4px; background-color: #B7410E;">
+
+ <!-- Galeri Section -->
+
+ <main>
+    <section class="Galeri" id="Galeri">
+
+    	<marquee direction="right">
+	<p id="Galeri" style="font-size: 2rem;">🥗Welcome to Our Gallery🥗</p>
+</marquee>
+
+    	<h1 class="heading"><span> Galeri </span> Kami </h1><br><br>
+
+      <img src="/uts/imagesu/rawon.jpg">
+      <h2>Rawon Daging</h2>
+      <p>Rawon adalah masakan sup daging sapi khas Jawa Timur yang terkenal dengan kuahnya yang berwarna hitam pekat. Warna hitam ini berasal dari penggunaan 'kluwak', buah yang berasal dari pohon kepayang. Selain kluwak, rawon juga mengandung bumbu rempah seperti bawang merah, bawang putih, kemiri, jahe, lengkuas, dan serai, yang memberikan rasa gurih dan sedikit pedas. Berikut cara membuatnya...</p>
+      <a href="rawon.html" class="read-more-btn">Read More</a>
+    </section>
+
+    <section class="Galeri" id="Galeri">
+    	<img src="/uts/imagesu/garang.jpeg">
+      <h2>Garang Asem</h2>
+      <p>Garang Asem adalah masakan khas Jawa Tengah, terutama dari daerah Semarang, yang terbuat dari daging ayam yang dimasak dalam kuah asam pedas yang segar. Berikut adalah resep sederhana untuk membuat Garang Asem...</p>
+      <a href="garang.html" class="read-more-btn">Read More</a>
+    </section>
+
+    <section class="Galeri" id="Galeri">
+    	<img src="/uts/imagesu/wedang uwuh.jpg">
+      <h2>Wedang Uwuh</h2>
+      <p>Wedang Uwuh adalah minuman khas Yogyakarta yang terbuat dari campuran rempah-rempah alami, seperti jahe, daun sereh, daun pandan, dan kayu manis, yang memberikan rasa hangat dan segar. Biasanya disajikan panas, Wedang Uwuh dipercaya memiliki banyak manfaat untuk kesehatan, terutama untuk menghangatkan tubuh. Berikut adalah resep sederhana untuk membuat Wedang Uwuh...</p>
+      <a href="uwuh.html" class="read-more-btn">Read More</a>
+    </section>
+
+    <section class="Galeri" id="Galeri">
+    	<img src="/uts/imagesu/wedang.jpeg">
+      <h2>Wedang Coro</h2>
+      <p>Wedang Coro adalah minuman tradisional khas Jawa Tengah, khususnya dari daerah Solo, yang terbuat dari campuran beras ketan hitam yang dimasak dengan kuah jahe manis. Biasanya wedang coro disajikan hangat dan sering dinikmati sebagai camilan sore atau setelah makan malam. Berikut adalah resep sederhana untuk membuat Wedang Coro...</p>
+      <a href="coro.html" class="read-more-btn">Read More</a>
+    </section>
+    
+  </main>
+
+  <hr style="height : 4px; background-color: #B7410E;">
+
+  <!-- products section starts -->
+
+  <section class="Produk" id="Produk">
+  	<h1 class="heading">Produk Kami</h1>
+  	<div class="box-container">
+  		<div class="box">
+  			<span class="dscount">-26%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/jahe merah.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Jahe Merah</h3>
+  				<div class="price"> $2.20  <span>$3.00</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-25%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/Ketumbar.jpeg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Ketumbar</h3>
+  				<div class="price"> $2.30 <span>$3.10</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-40%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/lengkuas.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Lengkuas</h3>
+  				<div class="price"> $1.20 <span>$2.30</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-50%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/kunyit.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Kunyit</h3>
+  				<div class="price"> $1.00 <span>$2.00</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-11%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/pala.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Pala</h3>
+  				<div class="price"> $6.20 <span>$7.00</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-2%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/kayu manis.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Kayu Manis</h3>
+  				<div class="price"> $4.00 <span>$4.05</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-13%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/Jinten.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Jinten</h3>
+  				<div class="price"> $7.00 <span>$8.02</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-6%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/bunga lawang.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Bunga Lawang</h3>
+  				<div class="price"> $7.07 <span>$7.50</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-26%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/Kencur.jpg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Kencur</h3>
+  				<div class="price"> $2.50 <span>$3.40</span></div>
+  			</div>
+  		</div>
+
+  		<div class="box">
+  			<span class="dscount">-30%</span>
+  			<div class="image">
+  				<img src="/uts/imagesu/temu kunci.jpeg" alt="">
+  				<div class="icons">
+  					<a class="fas fa-heart"></a>
+  					<a href="#Produk" class="cart-btn">add to cart</a>
+  					<a class="fas fa-share"></a>
+  				</div>
+  			</div>
+  			<div class="content">
+  				<h3>Temu Kunci</h3>
+  				<div class="price"> $1.00 <span>$1.50</span></div>
+  			</div>
+  		</div>
+  		
+  	</div>
+  	
+  </section>
+
+  <!-- products section ends -->
+
+  <!-- contact section start -->
+
+  <hr style="height : 4px; background-color: #B7410E;">
+
+<section class="Kontak" id="Kontak">
+	
+	<h1 class="heading"> <span> Kontak </span> Kami </h1>
+
+	<div class="row">
+
+		<form action="">
+			<input type="text" placeholder="Nama" class="box">
+			<input type="email" placeholder="Email" class="box">
+			<input type="number" placeholder="Nomor" class="box">
+			<textarea name="" class="box" placeholder="Pesan" id="" cols="30" rows="10"></textarea>
+			<input type="submit" value="send message" class="btn">
+		</form>
+
+		<div class="image">
+			<img src="/uts/imagesu/oi.jpeg">
+			
+		</div>
+	</div>
+</section>
+
+  <!-- contact section ends -->
+
+  <hr style="height : 4px; background-color: #B7410E;">
+
+  <!-- footer section start -->
+
+  <section class="footer">
+  	<div class="box-container">
+
+  		<div class="box">
+  			<h3>Quick Links</h3>
+  			<a href="#Home">Home</a>
+  			<a href="#About">About Us</a>
+  			<a href="#Galeri">Gallery</a>
+  			<a href="#Produk">Product</a>
+  			<a href="#Kontak">Contact</a>
+  		</div>
+
+  		<div class="box">
+  			<h3>Locations</h3>
+  			<a>Jakarta</a>
+  			<a>Bogor</a>
+  			<a>Tangerang</a>
+  			<a>Depok</a>
+  		</div>
+
+  		<div class="box">
+  			<h3>Contact Info</h3>
+  			<a href="https://www.instagram.com/ardha.weswari?igsh=MXJhdWs5cDVpZzVodQ=="><i class="fab fa-instagram"></i> my instagram</a>
+  			<a> <i class="fas fa-envelope"></i> ardhaweswari@gmail.com</a>
+  			<a>Tangerang Selatan, Banten</a>
+  			<img src="/uts/imagesu/py.jpg">
+  		</div>
+  		
+  	</div>
+  	
+  	<div class="credit"> Created by <span> Azzahra Ayu Ardhaweswari </span> | all rights reserved</div>
+  	
+  </section>
+
+
+  <!-- footer section ends -->
+
+	<script src="uts.js"></script>
+</body>
+</html>
